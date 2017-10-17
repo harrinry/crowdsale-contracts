@@ -228,7 +228,6 @@ contract AuthenticIDCrowdsale is FinalizableCrowdsale {
 
   // low level token purchase function from Crowdsale.sol,
   // overriding to add bonus token minting
-  // TODO: need to add min (1000 ATHAU) and max (66,665 ATHAU)
   function buyTokens(address _beneficiary) public payable {
     require(_beneficiary != 0x0);
     require(validPurchase());
